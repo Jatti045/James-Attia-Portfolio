@@ -1,0 +1,359 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: rgb(1, 4, 9);
+  color: white;
+  margin: 0;
+}
+
+/*header */
+header {
+  background-color: rgb(13, 17, 23);
+  box-shadow: 1px 1px 15px white;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cv-contact-button {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 80px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cv-contact-button:hover {
+  transform: scale(1.05);
+}
+
+.cv-contact-button-left {
+  background-color: white;
+  color: #333;
+}
+
+.cv-contact-button-right {
+  background-color: #333;
+  color: white;
+  padding: 1rem 3rem;
+}
+
+.cv-contact-button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cv-contact-button-left:hover,
+.cv-contact-button-right:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Style navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: lightgrey;
+}
+
+/* Style main content */
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.section-text {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+#about {
+  background-color: rgb(13, 17, 23);
+  box-shadow: 1px 1px 15px white;
+  height: 50vh;
+  width: 80%;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+main {
+  padding: 2rem;
+}
+
+main section {
+  margin-bottom: 2.5rem;
+}
+
+.certificate-img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.certificate-website {
+  color: white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1%;
+}
+
+#projects {
+  margin-top: 2rem;
+}
+
+.project {
+  background-color: rgb(13, 17, 23);
+  padding: 1.5rem;
+  box-shadow: 1px 1px 15px white;
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin-bottom: 1rem;
+}
+
+.project a {
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.checkmark-logo {
+  height: 2rem;
+  position: absolute;
+  margin-left: -2rem;
+  margin-top: -0.2rem;
+}
+
+#skills {
+  margin-top: 6rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.square {
+  box-shadow: 1px 1px 15px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(13, 17, 23);
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.experience-level {
+  margin-top: -0.6rem;
+  font-size: 1rem;
+}
+
+.square:hover {
+  transform: translateY(-10px);
+}
+
+/* Style form */
+
+#contact {
+  margin-top: 6rem;
+}
+form {
+  margin-top: 1rem;
+  background-color: rgb(13, 17, 23);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 1px 1px 15px white;
+  border-radius: 8px;
+}
+
+form label {
+  margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+form button {
+  padding: 0.7rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: hwb(0 20% 90%);
+}
+
+/* Style footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .social-links {
+  margin-top: 0.5rem;
+}
+
+footer .social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+.socials-block {
+  display: inline-block;
+}
+
+.socials-logo {
+  height: 25px;
+  vertical-align: middle;
+}
+
+/*Media Screen */
+
+@media (max-width: 600px) {
+  #about {
+    padding: 1rem;
+    height: 80vh;
+    width: 100%;
+  }
+
+  .section-title {
+    margin-top: -1rem;
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-top: -0.3rem;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  #skills {
+    text-align: center;
+  }
+
+  .square {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cv-contact-button {
+    padding: 1rem 1rem;
+  }
+
+  .cv-contact-button-right {
+    padding: 1rem 2.5rem;
+  }
+
+  nav ul li {
+    font-size: 0.8rem;
+    margin: auto 0.6rem;
+  }
+
+  .certificate-website {
+    font-size: 0.5rem;
+  }
+}

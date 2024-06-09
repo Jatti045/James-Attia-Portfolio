@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Attia's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img
+          src="assets/portfolio-banner.png"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <h1>James Attia</h1>
+        <p>Second Year Software Engineering Student</p>
+        <div id="header-buttons">
+          <button
+            onclick="window.alert('Not Implemented Yet')"
+            class="cv-contact-button cv-contact-button-left"
+          >
+            Download CV
+          </button>
+          <button
+            onclick="window.location.href='mailto:James.atttia@gmail.com';"
+            class="cv-contact-button cv-contact-button-right"
+          >
+            Email Me
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about-scroll-behavior">About</a></li>
+        <li><a href="#certificates-scroll-behavior">Certificates</a></li>
+        <li><a href="#projects-scroll-behavior">Projects</a></li>
+        <li><a href="#skills-scroll-behavior">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about-scroll-behavior"></section>
+      <br />
+      <h2 class="section-title">About Me</h2>
+      <section id="about">
+        <p class="section-text">
+          I am a passionate software engineering student at the University of
+          Ottawa with a love for coding and problem-solving. I enjoy working on
+          both front-end and back-end projects and am always eager to learn new
+          technologies.
+        </p>
+        <br />
+        <p class="section-text">
+          My experience includes developing a Business Management System in
+          Java, which integrates object-oriented principles and JSON-based data
+          persistence.
+        </p>
+        <br />
+        <p class="section-text">
+          I have a solid foundation in software development, customer service,
+          and technical writing, which has enhanced my communication and
+          teamwork skills. Proficient in Java, Python, HTML/CSS, JavaScript, and
+          familiar with tools like VS Code and IntelliJ IDEA, I strive to create
+          efficient and innovative solutions to complex problems.
+        </p>
+      </section>
+
+      <br />
+
+      <section id="certificates-scroll-behavior"></section>
+      <br />
+      <section id="certificates">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates">
+          <img
+            class="certificate-img"
+            src="assets/Screenshot 2024-06-09 142113.png"
+            alt=""
+          />
+          <a
+            class="certificate-website"
+            href="https://www.freecodecamp.org/certification/James-Attia/responsive-web-design"
+            ><br />
+            View My Responsive Web Design Certificate
+          </a>
+        </div>
+      </section>
+
+      <section id="projects-scroll-behavior"></section>
+      <br />
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h3>Business Management System</h3>
+            <p>
+              Developed a Business Management System in Java, integrating
+              object-oriented principles for efficient customer management and
+              JSON-based data persistence.
+            </p>
+            <a
+              href="https://github.com/Jatti045/BusinessManagementSystem"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="skills-scroll-behavior"></section>
+      <section id="skills">
+        <h2 class="section-title">Experience</h2>
+        <div class="container">
+          <div class="square">
+            <div>Java</div>
+            <div class="experience-level">
+              <img
+                class="checkmark-logo"
+                src="assets/checkmark.png"
+                alt="Checkmark Logo"
+              />Basic
+            </div>
+          </div>
+          <div class="square">
+            <div>Python</div>
+            <div class="experience-level">
+              <img
+                class="checkmark-logo"
+                src="assets/checkmark.png"
+                alt="Checkmark Logo"
+              />Basic
+            </div>
+          </div>
+          <div class="square">
+            <div>HTML/CSS</div>
+            <div class="experience-level">
+              <img
+                class="checkmark-logo"
+                src="assets/checkmark.png"
+                alt="Checkmark Logo"
+              />Basic
+            </div>
+          </div>
+
+          <div class="square">
+            <div>JavaScript</div>
+            <div class="experience-level">
+              <img
+                class="checkmark-logo"
+                src="assets/checkmark.png"
+                alt="Checkmark Logo"
+              />Basic
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <form method="post" id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 James Attia</p>
+      <div class="social-links">
+        <div class="socials-block">
+          <img
+            class="socials-logo"
+            src="assets/linkedin.png"
+            alt="LinkdIn Logo"
+          />
+        </div>
+        <a href="https://linkedin.com/in/jatti045uottawa" target="_blank">
+          LinkedIn</a
+        >
+        |
+        <div class="socials-block">
+          <img class="socials-logo" src="assets/github.png" alt="Gituhb Logo" />
+        </div>
+        <a href="https://github.com/Jatti045" target="_blank">GitHub</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
