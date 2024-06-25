@@ -354,7 +354,7 @@ footer .social-links a:hover {
     margin: auto 0.6rem;
   }
 
-  .certificate-website {
-    font-size: 0.5rem;
+  .certificates {
+    flex-direction: column;
   }
 }
