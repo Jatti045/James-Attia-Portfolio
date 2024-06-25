@@ -145,13 +145,13 @@ main section {
   margin-bottom: 2.5rem;
 }
 
-.certificate-img {
-  width: 50%;
-  border-radius: 10px;
+.certificates {
+  display: flex;
 }
 
-.certificate-website {
-  color: white;
+.certificate-img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .projects-grid {
