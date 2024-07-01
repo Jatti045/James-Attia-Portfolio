@@ -357,10 +357,4 @@ footer .social-links a:hover {
   .certificates {
     flex-direction: column;
   }
-
-  @media (max-width: 800px) {
-    #about {
-      height: 60%;
-    }
-  }
 }
