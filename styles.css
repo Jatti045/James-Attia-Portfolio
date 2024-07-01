@@ -131,7 +131,7 @@ nav ul li a:hover {
   background-color: rgb(13, 17, 23);
   box-shadow: 1px 1px 15px white;
   height: 80vh;
-  width: 40%;
+  width: 50%;
   margin: auto;
   border-radius: 8px;
   overflow: hidden;
@@ -310,7 +310,7 @@ footer .social-links a:hover {
 @media (max-width: 600px) {
   #about {
     padding: 1rem;
-    height: 80vh;
+    height: 93vh;
     width: 100%;
   }
 
@@ -356,5 +356,11 @@ footer .social-links a:hover {
 
   .certificates {
     flex-direction: column;
+  }
+
+  @media (max-width: 800px) {
+    #about {
+      height: 60%;
+    }
   }
 }
