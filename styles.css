@@ -310,7 +310,7 @@ footer .social-links a:hover {
 @media (max-width: 600px) {
   #about {
     padding: 1rem;
-    height: 93vh;
+    height: 95vh;
     width: 100%;
   }
 
@@ -356,5 +356,11 @@ footer .social-links a:hover {
 
   .certificates {
     flex-direction: column;
+  }
+
+  @media (max-width: 800px) {
+    #about {
+      height: 50%;
+    }
   }
 }
