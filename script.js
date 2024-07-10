@@ -6,12 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburgerMenu.addEventListener("click", function () {
     hamburgerMenu.classList.toggle("open");
     mainNavbar.classList.toggle("active");
+    if (document.body.style.overflow === "hidden") {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
   });
 
   navLinks.forEach((navLink) =>
     navLink.addEventListener("click", function () {
       hamburgerMenu.classList.remove("open");
       mainNavbar.classList.remove("active");
+      document.body.style.overflow = "auto";
     })
   );
 
