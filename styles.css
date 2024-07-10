@@ -333,7 +333,7 @@ footer .social-links a:hover {
     position: fixed;
     right: -100%;
     background-color: hsla(0, 0%, 10%, 0.95);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     z-index: 998;
     transition: right 0.3s ease-in-out;
   }
@@ -366,11 +366,23 @@ footer .social-links a:hover {
   }
 
   #hamburger-menu .hamburger-line {
-    width: 20px;
-    height: 1px;
+    width: 30px;
+    height: 3px;
     background-color: white;
     margin: 5px;
     transition: transform 0.3 ease;
+  }
+
+  #hamburger-menu .hamburger-line:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+
+  #hamburger-menu .hamburger-line:nth-child(2) {
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  #hamburger-menu .hamburger-line:nth-child(3) {
+    border-radius: 0 0 10px 10px;
   }
 
   #hamburger-menu.open .hamburger-line:nth-child(1) {
@@ -382,7 +394,7 @@ footer .social-links a:hover {
   }
 
   #hamburger-menu.open .hamburger-line:nth-child(3) {
-    transform: rotate(45deg) translate(-2px, -4px);
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 
   #about {
