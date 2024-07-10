@@ -1,22 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.getElementById("hamburger-menu");
-  const hamburgerLines = document.querySelectorAll(".hamburger-line");
   const navLinks = document.querySelectorAll(".nav-links");
   const mainNavbar = document.getElementById("main-navbar");
 
   hamburgerMenu.addEventListener("click", function () {
     hamburgerMenu.classList.toggle("open");
-    if (hamburgerMenu.classList.contains("open")) {
-      mainNavbar.style.display = "block";
-    } else {
-      mainNavbar.style.display = "none";
-    }
+    mainNavbar.classList.toggle("active");
   });
 
   navLinks.forEach((navLink) =>
     navLink.addEventListener("click", function () {
-      hamburgerMenu.classList.toggle("open");
-      mainNavbar.style.display = "none";
+      hamburgerMenu.classList.remove("open");
+      mainNavbar.classList.remove("active");
     })
   );
 
