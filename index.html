@@ -33,13 +33,26 @@
         </div>
       </div>
     </header>
-    <nav>
+    <nav id="hamburger-menu">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </nav>
+    <nav id="main-navbar">
       <ul>
-        <li><a href="#about-scroll-behavior">About</a></li>
-        <li><a href="#certificates-scroll-behavior">Certificates</a></li>
-        <li><a href="#projects-scroll-behavior">Projects</a></li>
-        <li><a href="#skills-scroll-behavior">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-links" href="#about-scroll-behavior">About</a></li>
+        <li>
+          <a class="nav-links" href="#certificates-scroll-behavior"
+            >Certificates</a
+          >
+        </li>
+        <li>
+          <a class="nav-links" href="#projects-scroll-behavior">Projects</a>
+        </li>
+        <li>
+          <a class="nav-links" href="#skills-scroll-behavior">Skills</a>
+        </li>
+        <li><a class="nav-links" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <main>
@@ -129,48 +142,37 @@
       </section>
       <section id="skills-scroll-behavior"></section>
       <section id="skills">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title-frontend">Frontend Skills</h2>
         <div class="container">
           <div class="square">
-            <div>Java</div>
-            <div class="experience-level">
-              <img
-                class="checkmark-logo"
-                src="assets/checkmark.png"
-                alt="Checkmark Logo"
-              />Basic
-            </div>
+            <div>HTML5</div>
+            <div class="experience-level"></div>
           </div>
+          <div class="square">
+            <div>CSS3</div>
+            <div class="experience-level"></div>
+          </div>
+          <div class="square">
+            <div>JavaScript (ES6+)</div>
+            <div class="experience-level"></div>
+          </div>
+          <div class="square">
+            <div>ReactJs</div>
+            <div class="experience-level"></div>
+          </div>
+        </div>
+
+        <h2 class="section-title-backend">Backend Skills</h2>
+
+        <div class="container">
           <div class="square">
             <div>Python</div>
-            <div class="experience-level">
-              <img
-                class="checkmark-logo"
-                src="assets/checkmark.png"
-                alt="Checkmark Logo"
-              />Basic
-            </div>
-          </div>
-          <div class="square">
-            <div>HTML/CSS</div>
-            <div class="experience-level">
-              <img
-                class="checkmark-logo"
-                src="assets/checkmark.png"
-                alt="Checkmark Logo"
-              />Intermediate
-            </div>
+            <div class="experience-level"></div>
           </div>
 
           <div class="square">
-            <div>JavaScript</div>
-            <div class="experience-level">
-              <img
-                class="checkmark-logo"
-                src="assets/checkmark.png"
-                alt="Checkmark Logo"
-              />Intermediate
-            </div>
+            <div>Java</div>
+            <div class="experience-level"></div>
           </div>
         </div>
       </section>

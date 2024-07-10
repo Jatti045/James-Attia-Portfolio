@@ -62,7 +62,7 @@ header .container {
 }
 
 .cv-contact-button-right {
-  background-color: #333;
+  background-color: hsl(0, 0%, 10%);
   color: white;
   padding: 1rem 3rem;
 }
@@ -85,10 +85,10 @@ header .container {
 }
 
 /* Style navigation */
-nav {
+#main-navbar {
   position: sticky;
   top: 0;
-  background: #333;
+  background-color: hsl(0, 0%, 10%);
 }
 
 nav ul {
@@ -118,6 +118,19 @@ nav ul li a:hover {
   text-align: center;
   font-size: 2rem;
   padding: 1rem 0;
+}
+
+.section-title-frontend {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.section-title-backend {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
 }
 
 .section-text {
@@ -191,13 +204,6 @@ main section {
   text-decoration: underline;
 }
 
-.checkmark-logo {
-  height: 2rem;
-  position: absolute;
-  margin-left: -2rem;
-  margin-top: -0.2rem;
-}
-
 #skills {
   margin-top: 6rem;
 }
@@ -214,8 +220,8 @@ main section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   background-color: rgb(13, 17, 23);
   color: white;
   font-size: 1.5em;
@@ -263,7 +269,7 @@ form textarea {
 form button {
   padding: 0.7rem;
   border: none;
-  background: #333;
+  background-color: hsl(0, 0%, 10%);
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
@@ -276,7 +282,7 @@ form button:hover {
 
 /* Style footer */
 footer {
-  background: #333;
+  background-color: hsl(0, 0%, 10%);
   color: #fff;
   text-align: center;
   padding: 1rem 0;
@@ -305,9 +311,63 @@ footer .social-links a:hover {
   vertical-align: middle;
 }
 
+#hamburger-menu {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 20px;
+  right: 20px;
+}
+
 /*Media Screen */
 
 @media (max-width: 600px) {
+  html {
+    scroll-behavior: auto;
+  }
+  #main-navbar {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: hsl(0, 0%, 10%);
+  }
+
+  #main-navbar ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-navbar ul li {
+    font-size: 1rem;
+    padding: 3rem;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  #hamburger-menu .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: transform 0.3 ease;
+  }
+
+  #hamburger-menu.open .hamburger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  #hamburger-menu.open .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger-menu.open .hamburger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
   #about {
     padding: 1rem;
     height: 95vh;
@@ -315,6 +375,16 @@ footer .social-links a:hover {
   }
 
   .section-title {
+    margin-top: -1rem;
+    font-size: 1.5rem;
+  }
+
+  .section-title-frontend {
+    margin-top: -1rem;
+    font-size: 1.5rem;
+  }
+
+  .section-title-backend {
     margin-top: -1rem;
     font-size: 1.5rem;
   }
@@ -356,11 +426,5 @@ footer .social-links a:hover {
 
   .certificates {
     flex-direction: column;
-  }
-
-  @media (max-width: 800px) {
-    #about {
-      height: 50%;
-    }
   }
 }

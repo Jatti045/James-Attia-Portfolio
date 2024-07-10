@@ -1,34 +1,59 @@
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const hamburgerLines = document.querySelectorAll(".hamburger-line");
+  const navLinks = document.querySelectorAll(".nav-links");
+  const mainNavbar = document.getElementById("main-navbar");
 
-    const formData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
-
-    fetch("/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok " + response.statusText);
-        }
-        return response.text();
-      })
-      .then((data) => {
-        alert(data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert(
-          "There was an error sending your message. Please try again later."
-        );
-      });
+  hamburgerMenu.addEventListener("click", function () {
+    hamburgerMenu.classList.toggle("open");
+    if (hamburgerMenu.classList.contains("open")) {
+      mainNavbar.style.display = "block";
+    } else {
+      mainNavbar.style.display = "none";
+    }
   });
+
+  navLinks.forEach((navLink) =>
+    navLink.addEventListener("click", function () {
+      hamburgerMenu.classList.toggle("open");
+      mainNavbar.style.display = "none";
+    })
+  );
+
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+      };
+
+      fetch("/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              "Network response was not ok " + response.statusText
+            );
+          }
+          return response.text();
+        })
+        .then((data) => {
+          alert(data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert(
+            "There was an error sending your message. Please try again later."
+          );
+        });
+    });
+});
