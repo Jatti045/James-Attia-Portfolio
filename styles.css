@@ -387,6 +387,7 @@ footer .social-links a:hover {
 
   #hamburger-menu.open .hamburger-line:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
+    border-radius: 10px;
   }
 
   #hamburger-menu.open .hamburger-line:nth-child(2) {
@@ -395,11 +396,12 @@ footer .social-links a:hover {
 
   #hamburger-menu.open .hamburger-line:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
+    border-radius: 10px;
   }
 
   #about {
     padding: 1rem;
-    height: 95vh;
+    height: 100%;
     width: 100%;
   }
 
