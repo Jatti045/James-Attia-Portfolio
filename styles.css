@@ -169,7 +169,7 @@ main section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 1%;
 }
@@ -457,5 +457,12 @@ footer .social-links a:hover {
 
   .certificates {
     flex-direction: column;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-top: 1%;
   }
 }

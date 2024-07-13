@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("contactForm")
     .addEventListener("submit", function (event) {
       event.preventDefault();
+      alert(
+        "Form submission works! This message would be sent to your email on a live site."
+      );
 
       const formData = {
         name: document.getElementById("name").value,
