@@ -183,6 +183,11 @@ main section {
   padding: 1.5rem;
   box-shadow: 1px 1px 15px white;
   border-radius: 8px;
+  transition: 0.4s;
+}
+
+.project:hover {
+  transform: scale(0.95);
 }
 
 .project h3 {
@@ -228,6 +233,7 @@ main section {
   text-align: center;
   border-radius: 10px;
   flex-direction: column;
+  transition: 0.4s;
 }
 
 .experience-level {
@@ -236,7 +242,7 @@ main section {
 }
 
 .square:hover {
-  transform: translateY(-10px);
+  transform: scale(0.95);
 }
 
 /* Style form */
@@ -322,7 +328,7 @@ footer .social-links a:hover {
 
 /*Media Screen */
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     scroll-behavior: auto;
   }
