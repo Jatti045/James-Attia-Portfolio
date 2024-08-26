@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: rgb(1, 4, 9);
+  color: white;
+  margin: 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 6rem 0 -2rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+}

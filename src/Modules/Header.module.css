@@ -1,0 +1,108 @@
+header {
+  z-index: 999;
+  background-color: rgb(13, 17, 23);
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.container::after,
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(from var(--angle), white, #333, white);
+  padding: 26px 2px;
+  z-index: -1;
+  border-radius: 8px;
+  animation: autoRotateBorderColorAnimation 5s linear infinite;
+}
+
+.container::before {
+  filter: blur(20px);
+}
+
+@keyframes autoRotateBorderColorAnimation {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.container p {
+  margin: 20px 0;
+}
+
+.headerButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cvContactButton {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 80px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cvContactButton:hover {
+  transform: scale(0.95);
+}
+
+.cvContactButtonLeft {
+  background-color: white;
+  color: #333;
+}
+
+.cvContactButtonRight {
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+  padding: 1rem 3rem;
+}
+
+.cvContactButton {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cvContactButtonLeft:hover,
+.cvContactButtonRight:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .cvContactButton {
+    font-size: 0.8rem;
+  }
+}

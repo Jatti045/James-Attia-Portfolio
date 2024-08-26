@@ -1,0 +1,31 @@
+footer {
+  background-color: hsl(0, 0%, 10%);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.socialLinks {
+  margin-top: 0.5rem;
+}
+
+.socialLinks a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.socialLinks Link:hover {
+  text-decoration: underline;
+}
+
+.socialsBlock {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.socialsLogo {
+  height: 25px;
+  vertical-align: middle;
+}

@@ -1,0 +1,55 @@
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 1.5rem;
+}
+
+.projects {
+  margin-top: 2rem;
+}
+
+.project {
+  background-color: rgb(13, 17, 23);
+  padding: 1.5rem;
+  box-shadow: 1px 1px 15px white;
+  border-radius: 8px;
+  transition: all ease 0.4s;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project:hover {
+  transform: scale(0.95);
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin-bottom: 1rem;
+}
+
+.project a {
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .projectsGrid {
+    font-size: 0.8rem;
+  }
+}

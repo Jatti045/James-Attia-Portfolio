@@ -1,0 +1,26 @@
+.about {
+  background-color: rgb(13, 17, 23);
+  box-shadow: 1px 1px 15px white;
+  height: max-content;
+  max-width: 800px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+.sectionText {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sectionText {
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-top: -0.3rem;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}

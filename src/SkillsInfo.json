@@ -1,0 +1,32 @@
+[
+  {
+    "id": "HTML5",
+    "skill": "HTML5",
+    "position": 1
+  },
+  {
+    "id": "CSS3",
+    "skill": "CSS3",
+    "position": 2
+  },
+  {
+    "id": "JavaScript (ES6+)",
+    "skill": "JavaScript (ES6+)",
+    "position": 3
+  },
+  {
+    "id": "ReactJs",
+    "skill": "ReactJs",
+    "position": 4
+  },
+  {
+    "id": "Python",
+    "skill": "Python",
+    "position": 5
+  },
+  {
+    "id": "Java",
+    "skill": "Java",
+    "position": 6
+  }
+]

@@ -1,0 +1,117 @@
+.mainNavbar {
+  position: sticky;
+  top: 0;
+  background-color: hsl(0, 0%, 10%);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: lightgrey;
+}
+
+/* Hamburger Menu Styles */
+.hamburgerMenu {
+  background: none;
+  z-index: 10000;
+  display: none;
+  position: fixed;
+  top: 3%;
+  right: 6%;
+  cursor: pointer;
+  max-height: 35px;
+  max-width: 44px;
+}
+
+.hamburgerLine {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+.mainNavbar.active {
+  transition: right 0.4s ease;
+}
+
+.hamburgerMenu.open .hamburgerLine:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburgerMenu.open .hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerMenu.open .hamburgerLine:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Navigation */
+@media only screen and (max-width: 768px) {
+  .mainNavbar {
+    height: 100vh;
+    width: 100vw;
+    right: -100%;
+    position: fixed;
+  }
+
+  .mainNavbar.active {
+    right: 0;
+  }
+
+  .mainNavbar ul {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .mainNavbar ul li {
+    margin: 2rem 0;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
+
+  .hamburgerMenu .hamburgerLine:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .hamburgerMenu .hamburgerLine:nth-child(2) {
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .hamburgerMenu .hamburgerLine:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .hamburgerMenu.open .hamburgerLine:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    border-radius: 10px;
+  }
+
+  .hamburgerMenu.open .hamburgerLine:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburgerMenu.open .hamburgerLine:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    border-radius: 10px;
+  }
+}
