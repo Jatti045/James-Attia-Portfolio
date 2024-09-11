@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../Modules/Navbar.module.css";
 import { Link } from "react-scroll";
 
@@ -8,9 +8,11 @@ const Navbar = () => {
     setHamburgerMenu((prevState) => !prevState);
   };
 
-  hamburgerMenu
-    ? (document.body.style.overflow = "hidden")
-    : (document.body.style.overflow = "auto");
+  useEffect(() => {
+    hamburgerMenu
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [hamburgerMenu]);
 
   return (
     <>

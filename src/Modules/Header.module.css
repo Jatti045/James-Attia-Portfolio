@@ -98,6 +98,11 @@ header {
 
 @media only screen and (max-width: 768px) {
   .cvContactButton {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .cvContactButtonRight {
+    padding: 1.5rem calc(2rem + 10px);
   }
 }

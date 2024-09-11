@@ -68,12 +68,13 @@ nav ul li a:hover {
   .mainNavbar {
     height: 100vh;
     width: 100vw;
-    right: -100%;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
     position: fixed;
   }
 
   .mainNavbar.active {
-    right: 0;
+    transform: translateX(0);
   }
 
   .mainNavbar ul {
