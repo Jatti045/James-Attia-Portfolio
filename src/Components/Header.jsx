@@ -16,7 +16,7 @@ const Header = () => {
         <div className={styles.headerButtons}>
           <button
             onClick={() => window.open(JamesAttiaResume, "_blank")}
-            className={`${styles.cvContactButton} ${styles.cvContactButtonleft}`}
+            className={`${styles.cvContactButton} ${styles.cvContactButtonLeft}`}
           >
             Download CV
           </button>
