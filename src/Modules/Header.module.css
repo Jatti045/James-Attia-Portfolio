@@ -99,10 +99,10 @@ header {
 @media only screen and (max-width: 768px) {
   .cvContactButton {
     font-size: 0.75rem;
-    padding: 1.5rem 2rem;
+    padding: 1.2rem 1.5rem;
   }
 
   .cvContactButtonRight {
-    padding: 1.5rem calc(2rem + 10px);
+    padding: 1.2rem calc(1.5rem + 10px);
   }
 }
