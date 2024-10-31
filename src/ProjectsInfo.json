@@ -1,26 +1,38 @@
 [
   {
     "id": 1,
+    "title": "Learning Management System Accessibility Tool",
+    "description": "Developed for a client, this tool enhances accessibility in LMS environments by allowing professors to upload and analyze course materials for accessibility issues. It provides detailed, step-by-step guidance for making content more accessible, fostering an inclusive learning experience. Built with React and Firebase for intuitive usability and secure data management.",
+    "link": "https://github.com/Jatti045/LMS-Accessibility-Tool"
+  },
+  {
+    "id": 2,
+    "title": "Attendance Management System (EAMS)",
+    "description": "Developed an Android application that streamlines event registration and attendance tracking for universities. The app supports multiple user roles (Attendee, Organizer, Administrator), enabling event creation, registration approvals, and real-time tracking. Integrated Firebase for user management and event data persistence, ensuring a smooth and secure experience for attendees and administrators.",
+    "link": "https://github.com/uOttawaSEG/project-group-36"
+  },
+  {
+    "id": 3,
     "title": "Clothing Landing Page",
     "description": "A modern, responsive web application built with React.js and Vite, designed to showcase a fictional clothing brand. This project demonstrates a visually appealing landing page with interactive elements and a clean design. It was created as part of an application for a Shopify intern position, highlighting proficiency in front-end development and UI/UX design.",
     "link": "https://jatti045.github.io/Clothing-Landing-Page/"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Trivia Quest",
     "description": "Trivia Quest is a web-based trivia game project utilizing an API to fetch questions from diverse categories. Test your knowledge across diverse categories in this interactive game designed for desktop and mobile browsers.",
     "link": "https://jatti045.github.io/Trivia-Quest/"
   },
   {
-    "id": 3,
-    "title": "Pokemon Search App",
-    "description": "Developed a dynamic web application utilizing the Pokémon API to retrieve and showcase comprehensive Pokémon details such as ID, images, types, and descriptive information.",
-    "link": "https://jatti045.github.io/Pokemon-Search-App/"
-  },
-  {
-    "id": 4,
+    "id": 5,
     "title": "Business Management System",
     "description": "Developed a Business Management System in Java, integrating object-oriented principles for efficient customer management and JSON-based data persistence.",
     "link": "https://github.com/Jatti045/BusinessManagementSystem"
+  },
+  {
+    "id": 6,
+    "title": "Pokemon Search App",
+    "description": "Developed a dynamic web application utilizing the Pokémon API to retrieve and showcase comprehensive Pokémon details such as ID, images, types, and descriptive information.",
+    "link": "https://jatti045.github.io/Pokemon-Search-App/"
   }
 ]
