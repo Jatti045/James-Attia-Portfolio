@@ -13,26 +13,8 @@
   },
   {
     "id": 3,
-    "title": "Clothing Landing Page",
-    "description": "A modern, responsive web application built with React.js and Vite, designed to showcase a fictional clothing brand. This project demonstrates a visually appealing landing page with interactive elements and a clean design. It was created as part of an application for a Shopify intern position, highlighting proficiency in front-end development and UI/UX design.",
-    "link": "https://jatti045.github.io/Clothing-Landing-Page/"
-  },
-  {
-    "id": 4,
-    "title": "Trivia Quest",
-    "description": "Trivia Quest is a web-based trivia game project utilizing an API to fetch questions from diverse categories. Test your knowledge across diverse categories in this interactive game designed for desktop and mobile browsers.",
-    "link": "https://jatti045.github.io/Trivia-Quest/"
-  },
-  {
-    "id": 5,
-    "title": "Business Management System",
-    "description": "Developed a Business Management System in Java, integrating object-oriented principles for efficient customer management and JSON-based data persistence.",
-    "link": "https://github.com/Jatti045/BusinessManagementSystem"
-  },
-  {
-    "id": 6,
-    "title": "Pokemon Search App",
-    "description": "Developed a dynamic web application utilizing the Pokémon API to retrieve and showcase comprehensive Pokémon details such as ID, images, types, and descriptive information.",
-    "link": "https://jatti045.github.io/Pokemon-Search-App/"
+    "title": "Gemini-Clone",
+    "description": "Gemini is a clone of the Gemini web app built using React and Vite. It offers a fast, modern development environment with Vite’s optimized build system, React for UI components, and a seamless developer experience.",
+    "link": "https://jatti045.github.io/Gemini-Clone/"
   }
 ]

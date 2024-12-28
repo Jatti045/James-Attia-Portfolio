@@ -12,6 +12,7 @@
 }
 
 .project {
+  margin: 1rem;
   background-color: rgb(13, 17, 23);
   padding: 1.5rem;
   box-shadow: 1px 1px 15px white;
